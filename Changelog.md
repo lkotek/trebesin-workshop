@@ -6,10 +6,10 @@
 
 - tst1
 
-## 1.2.9
+## 0.0.2
 
 - balbalala
 
-## 1.2.8
+## 0.0.1
 
 - Opraveny chyby v offline režimu aplikace
