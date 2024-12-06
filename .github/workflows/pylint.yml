@@ -19,6 +19,6 @@ jobs:
           pip install pylint --user
       - name: Run pylint for python code
         run: |
-          pylint src/*.py
+          pylint */src/*.py
 
       - run: echo "🍏 This job's status is ${{ job.status }}."
