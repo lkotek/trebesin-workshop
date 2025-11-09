@@ -1,0 +1,11 @@
+FROM fedora:43
+
+WORKDIR /usr/src/app
+COPY . .
+RUN dnf in -y python3-paste
+RUN dnf in -y python3-bottle
+RUN mkdir /tmp/uloziste
+EXPOSE 8081
+# stdout/stderr is send directly to terminal
+ENV PYTHONUNBUFFERED=1
+CMD ["python3", "web.py"]
